@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BankStatement</string>
+    <string name="welcome_txt">Hello, welcome to our Bank Statement app! Enter the account holder ID below to view your statement:</string>
+    <string name="continue_text">Continue</string>
+    <string name="txt_account_id">ID Account</string>
+</resources>

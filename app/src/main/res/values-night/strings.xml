@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_txt">Olá seja bem-vindo(a) ao nosso aplicativo de Extrato Bancario! Digite o ID do correntista abaixo para consultar seu extrato:</string>
+</resources>

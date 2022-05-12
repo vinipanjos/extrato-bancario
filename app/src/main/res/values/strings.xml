@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ExtratoBancario</string>
+    <string name="welcome_txt">Olá, seja bem-vindo(a) ao nosso aplicativo de Extrato Bancario! Digite o ID do correntista abaixo para consultar seu extrato:</string>
+    <string name="continue_text">Continuar</string>
+    <string name="txt_account_id">ID do Correntista</string>
 </resources>
