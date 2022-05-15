@@ -1,11 +1,12 @@
 package com.vinipanjos.extratobancario.ui.statement
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import com.vinipanjos.extratobancario.R
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.vinipanjos.extratobancario.databinding.ActivityBankStatementBinding
 import com.vinipanjos.extratobancario.domain.Correntista
+import com.vinipanjos.extratobancario.domain.Movimentacao
+import com.vinipanjos.extratobancario.domain.TipoMovimentacao
 
 class BankStatementActivity : AppCompatActivity() {
 
@@ -25,6 +26,19 @@ class BankStatementActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        Log.d("TESTE", "Chegou o ID: ${accountHolder.id}")
+        binding.rvBankStatement.layoutManager = LinearLayoutManager(this)
+
+        findBankStatement()
+
+    }
+
+    private fun findBankStatement() {
+        val dataSet = ArrayList<Movimentacao>()
+        dataSet.add(Movimentacao(1, "15/05/2022 11:36:42", "Pratique Fitness", 150.0, TipoMovimentacao.DESPESA, 1))
+        dataSet.add(Movimentacao(1, "15/05/2022 11:36:42", "Pratique Fitness", 150.0, TipoMovimentacao.RECEITA, 1))
+        dataSet.add(Movimentacao(1, "15/05/2022 11:36:42", "Pratique Fitness", 150.0, TipoMovimentacao.DESPESA, 1))
+        dataSet.add(Movimentacao(1, "15/05/2022 11:36:42", "Pratique Fitness", 150.0, TipoMovimentacao.DESPESA, 1))
+        dataSet.add(Movimentacao(1, "15/05/2022 11:36:42", "Pratique Fitness", 150.0, TipoMovimentacao.DESPESA, 1))
+        binding.rvBankStatement.adapter = BankStatementAdapter(dataSet)
     }
 }
