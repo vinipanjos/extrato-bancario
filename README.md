@@ -8,3 +8,6 @@ Agradecimentos ao Santander Brasil
 ##
 1. Fonte
 - [Santander Dev Week App Android de Extrato Bancário](https://www.youtube.com/watch?v=8dL20O66awY&ab_channel=DigitalInnovationOne)
+- [Bankline Api](https://github.com/digitalinnovationone/santander-dev-week-bankline-api)
+- [Github dio](https://github.com/digitalinnovationone/santander-dev-week-bankline-android)
+- [Construindo Um App de Extrato Bancário em Kotlin](https://docs.google.com/presentation/d/1rdcUkks2Fc273ci6C_sdPtOp8IWKmP6L/edit#slide=id.p2)
